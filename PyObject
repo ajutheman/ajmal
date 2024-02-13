@@ -1,0 +1,43 @@
+
+         import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import org.python.util.PythonInterpreter;
+import org.python.core.PyObject;
+
+
+
+
+
+ try {
+           
+            Process p = Runtime.getRuntime().exec("python C:\\Users\\acer\\OneDrive\\Documents\\NetBeansProjects\\firstproject\\src\\hel.py sss");
+           
+            BufferedReader stdInput = new BufferedReader(new
+                 InputStreamReader(p.getInputStream()));
+
+            BufferedReader stdError = new BufferedReader(new
+                 InputStreamReader(p.getErrorStream()));
+
+            // read the output from the command
+              String s= stdInput.readLine();
+            tf.setText(s);
+           
+        }
+        catch (IOException e) {
+            System.out.println("exception happened - here's what I know: ");
+            e.printStackTrace();
+            System.exit(-1);
+        }
+
+
+
+
+
+
+
+
+PythonInterpreter interpreter = new PythonInterpreter();
+interpreter.execfile("C:\\Users\\acer\\OneDrive\\Documents\\NetBeansProjects\\firstproject\\src\\test.py");
+PyObject str = interpreter.eval("repr(Abc().abc())");
+tf.setText(str.toString());
