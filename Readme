@@ -1,0 +1,2058 @@
+31 October, 2021
+CERTIFICATE
+This is to certify that the project work entitled “Online Voting system”
+submitted by AJMAL M (Reg. No: 33220149008) fourth semester BCA. student of MAR
+GREGORIOS ARTS AND SCIENCE COLLEGE, PUNNAPRA, Alappuzha under
+Kerala University is a bonafide record of work carried out by his, at Calculus
+Edupoint, Thiruvampady, Alappuzha in partial fulfilment of the requirements for the
+awarding Bachelor’s degree in Computer Applications, from 20/06/2022 to
+30/09/2022.
+
+Goutham Lal S H
+Project Manager,
+Calculus Edupoint
+
+Calculus Edupoint
+Amina Tower, West of
+Thiruvampady P.O
+Alappuzha
+Pin: 688001
+Phone: 9072002738
+DECLARATION We hereby declare that the project report entitled "ONLINE VOTING SYSTEM WITH FACE RECOGNITION" submitted to the Kerala University in partial fulfilment of the requirements for the awards of degree of BCA. This project report is a bonafide work submitted under the guidance of Mr. Joseph James, Lecturer in Computer Science, Mar Gregorio's College, Punnapra during our period of study. We also declare that this project report has not been submitted to any other university or institution for the award of any degree or diploma. PLACE: ALAPPUZHA AJMAL M ***** DATE: 12/09/2022
+DEPARTMENT OF COMPUTER APPLICATIONS MAR GREGORIOS COLLEGE, PUNNAPRA, ALAPPUHZA BONAFIDE CERTIFICATE This is to certify that the mini project entitled “ONLINE VOTING SYSTEM WITH FACE RECOGNITION” is the bonafide record of the work done by Mr. AJMAL M (Reg. No. **********) of BCA towards the partial fulfilment of the requirement for the award of the Degree of Bachelor of Computer Applications by Kerala University, Thiruvananthapuram during the academic year 2022-2023. Internal Guide Head of the Department Mr. Joseph James Mr. Antochen Mathew Lecturer Head of the Department Dept. of Computer Applications Dept. of Computer Application INTERNAL EXAMINER EXTERNAL EXAMINER
+ACKNOWLEDGEMENT We are indebted to the principal Prof. Jacob Mathew M who graciously gives valuable help and advice for conducting the project. I am indebted to the Head of the department, Mr. Antochen Mathew to whom I Across my sincere gratitude and profound thankfulness, for his good guidance, insightful opinion and constructive criticism. We express wholehearted gratitude to my esteemed lecturer and guide Mr. Joseph James for his sincere guidance, good support and constant encouragement for carrying out the project. We wish to thank the librarian and other non-teaching staff in the department for their co- ordination and support. We express our sincere thanks to the lab faculty for his valuable help to complete the project work in a successful way. We also thank all other faculty members of the Department of Computer Science for their assistance and kind support in doing the project. We express heartfelt gratitude to our family for their encouragement and prayers for the successful completion of the project. With at most reverence, we thank Almighty for showing blessing for the completion of the project. AJMAL M (**********)
+SYNOPSIS In any developing country, democracy plays an important role where a leader of a country is elected by the citizen. One of the main issues in the conventional voting system is that it consumes lots of manpower as well as resources and the preparation has to be started many days before the commencement of the election. During this preparation, some people may involve in illegal arrangements with each other or try to replace their henchmen in this process to win the election. It is a confidential process; so it must be transparent. Meddle- proof, Usable, Authenticated, Accurate, Verifiability and Mobility. There are some draw- backs to conventional voting systems such as damage to machines, chances of violence, dummy voting and proper monitoring. A manual voting system has been followed in many parts of our country so people could not cast their vote as it is placed remote. As there is region-wise distribution, voters need to reach the place of voting. To overcome these problems, a new confidential E-Voting system is introduced which provides security to the election system by detecting and recognising the voter’s face who is going to cast his/her vote. In this system, the voter’s face is detected, captured and stored in the database then match the captured image with the image already stored in database to recognize the person. If a match occurs then the person is allowed to cast their vote. Once the vote is casted, the same person will not be permitted to vote again. This provides security against duplicate voting and fraudulence and make the system more efficient and user friendly.
+TABLE OF CONTENTS LIST OF CONTENTS PAGE NO 1. INTRODUCTION 1 2. PROBLEM SELECTION 3 3. PROJECT MONITORING SYSTEM 4 3.1. GANTT CHART 4 4. SYSTEM STUDY 5 4.1 EXISTING SYSTEM 5 4.2 PROPOSED SYSTEM 5 4.3 PURPOSE & SCOPE OF THE PROJECT 6 4.4 OBJECTIVES OF PROJECT 6 4.5 FEASIBILITY STUDY 6 4.5.1 OPERATIONAL FEASIBILITY 7 4.5.2 TECHNICAL FEASIBILITY 7 4.5.3 ECONOMICAL FEASIBILITY 8 5. SYSTEM ANALYSIS 9 5.1 HARDWARE AND SOFTWARE SPECIFICATION 9 5.1.1 HARDWARE REQUIREMENTS 9 5.2.2 OFTWARE REQUIREMENTS 9 5.2 SYSTEM FLOW CHART 10 5.3 DATA FLOW DIAGRAM 13
+5.4 USE CASE DIAGRAM 19 5.5 ACTIVITY DIAGRAM 21 6. SYSTEM DESIGN 26 6.1 CODING 27 6.2 DATABASE DESIGN 60 6.3 USER INTERFACE DESIGN 67 6.4 SCREENSHOTS 68 7. SYSTEM TESTING 80 8. FUTURE ENHANCEMENT 83 9. CONCLUSION 84 10. REFERENCES 85 10.1 BIBLIOGRAPHY 85 10.2 WEBLIOGRAPHY 85
+ONLINE VOTING SYSTEM 1
+1. INTRODUCTION
+In this project, a new authentication technique in the online voting system using facial
+recognition of the voter is used. In India, currently, there are two types of voting
+systems in practice. They are secret Ballet paper and Electronic Voting Machines
+(EVM), but both processes have some limitations or demerits. In India online voting
+has not been yet implemented. The current voting system is not safe and secure too.
+The voters need to go to distributed places like polling booths and stand in a long queue
+to cast their vote, because of these reasons most people miss their chance of voting.
+The voter who is not eligible can also cast their vote by fake means which may lead to
+many problems. That's why in this project we have to propose a system or way for
+voting which is very effective or useful in voting. In our approach, we have two levels
+of security in the voting process.
+The first level is the verification of a unique id number (UID), and the second level is
+face recognition or face matching. The security level of our system is greatly improved
+by the new application method for each voter.
+The user authentication process of the system is improved by adding face recognition
+in an application which will identify whether the particular user has authenticated user
+or not. The online voting system offers the highest levels of transparency, control,
+security and efficiency of election processes. Online voting provides voters a
+comfortable and secure voting experience. Paper-based voting are both cost-intensive
+and burdensome for the environment. One of the benefits of online voting is that they
+don’t require many resources. Online voting allows you to access results shortly after
+the election. As face identity is unique among voters, face recognition is one of the
+best tool to avoid bogus voting.
+In India we used two types of voting process. Traditionally we used ballot papers to
+vote and the votes are counted manually, which consume excess of time. Then ballot
+papers are replaced by electronic voting machine as it consumes large time to count
+the votes and due to the error involved in the manual counting process.
+The electronic voting machine gives quick publication of result which is accurate. In
+existing system, there are so many chances to misuse the votes as it does not have
+proper identification system In our technique, iris and Finger print are used.
+Fingerprint is unique for every single person, so that we can avoid bogus voting. But
+for old person and cancer patients the fingerprint is not clearly visible so we introduced
+the technique called iris scanning, so that they can cast their votes.
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 2
+The voter can log in using a password and id. No one can log in without knowing the
+password and id. Not only that there is one more security added to it which is face
+recognition. Even if a person knows another person’s password and id, he can proceed
+only if the machine Recognizes the face. so this is a secure mode. Other features
+include vote counting and final result. The voter can log in, the candidate can register
+through this system and the total number of votes each candidate got can also be
+calculated.
+MODULES
+ADMIN: admin can register voter, manage voter, update candidate, display voter,
+display result, login
+VOTER: by using a login id and password the voter can vote, view the candidate list
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 3
+2.PROBLEM SELECTION
+The online voting system offers the highest levels of transparency, control, security
+and efficiency of election processes. Online voting provides voters with a comfortable
+and secure voting experience. Paper-based voting is both cost-intensive and
+burdensome for the environment. One of the benefits of online voting is that they don’t
+require many resources. Online voting allows you to access results shortly after the
+election. As face identity is unique among voters, face recognition is one of the best
+tools to avoid bogus voting.
+The entire system operates manually i.e, a machine and paper-based voting system,
+which requires a lot of manpower and a lot of resources. Bogus voting, lengthy process,
+time taken. The time and place of voting are predefined. Maintaining discipline and
+security requires a lot of manpower.
+The majority of the conventional voting techniques have been employed over the years
+in elections. Each of these techniques had attendant shortcomings. The existing
+conventional voting systems have been subjected to gross abuse and irregularities.
+Electronic voting which is emerging as an alternative to these conventional voting
+systems, though highly promising is not free of flaws; remote internet voting systems
+still suffer from many security problems which rely on the clients, the servers, and the
+network connections. Denial-of-service attacks and viruses still belong among the
+most challenging security issues. In this project,
+we discuss the security issues associated with remote internet voting. In particular, we
+examine the feasibility of running national elections over the Internet. The focus of
+this project is on the limitations of the currently deployed infrastructure in terms of the
+security of the hosts and the Internet itself. We conclude that without appropriate
+security measuresinternet-baseded elections can be a challenge
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 4
+MAR GREGORIOS COLLEGE
+3. PROJECT MONITORING SYSTEM
+3.1GANTT CHART
+Gantt chart is a type of bar chart that illustrates a project schedule, named after its
+inventor, Henry Gantt (1861–1919), who designed a chart around the years 1910–
+1915. Modern Gantt charts also show the dependency relationships between activities
+and current schedule status. This chart lists the tasks to be performed on the vertical
+axis, and time intervals on the horizontal axis. The 2the start and finish dates of the
+terminal elements and summary elements of a project. Terminal elements and
+summary elements constitute the work breakdown structure of the project. Modern
+Gantt charts also show the dependency (i.e., precedence network) relationships
+between activities.
+Tasks Duration JUNE JULY AUGST SEPTMBER
+Week 1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4
+System Study 2 Weeks
+System Analysis 3 Weeks
+Design 3 Weeks
+Coding and
+Testing
+3 Weeks
+Implementation 1 week
+ONLINE VOTING SYSTEM 5
+4.SYSTEM STUDY
+4.1 EXISTING SYSTEM
+In the present system, there are no such application-level system provisions in the
+country to carry out the voting and procedure as a whole. Also in the present status,
+there is no such application in use for an automated system for voting according to the
+voting structure existing in the country. All the step-by-step procedures are carried out
+by the authorized authorities according to the jobs assigned by the ECI. The fact is all
+the procedures are carried out manually, starting from the registration process to result
+in publishing.
+The current voting system is the conventional voting system built on a ballot machine
+where the votisare allowed to cast their vote by pressing the button along with the
+symbol on the voting machine. So there arise some security risks that the person may
+cast their votes more than one time, fraud, breakage of the system, and theft may
+happen. In this conventional systemthe , ballot begins before a week and the voters go
+to the polling booth to cast their votes.
+To provide security huge manpower is required to avoid malpractices, to avoid such
+security issues and malpractices a new E-voting system has been introduced using
+biometric technology which uses face detection and recognition to cast their vote their
+place without moving to the polling booth they can cast their votes through online. By
+using the face as their identity they avoid the security issues of a conventional system.
+The government does this process manually wastes a lot of time and money. Thus, the
+present system proves itself to be an inefficient one. The existing system is not web￾based. The user or person must want to go to the polling station for casting their votes
+Major Drawbacks of the system
+The main drawbacks of the existing system are
+•The entire system operates manually i.e., a machine and paper-based voting system,
+which requires a lot of manpower and a lot of resources.
+•Bogus voting is, a lengthy process, and time is taken.
+•The time and place of voting are predefined.
+•Maintaining discipline and security requires a lot of manpower.
+4.2 PROPOSED SYSTEM
+The basic idea of this project is to create a system to conduct online voting through an
+electronic voting machine. It is a project on the combination of java and python. The
+benefit of this method is to avoid fraudulent voting and it is a secure one also. The
+voter can log in using a password and id. No one can log in without knowing the
+password and id. Not only that there is one more security added to it which is face
+recognition. Even if a person knows another person’s password and id, he can proceed
+only if the machine Recognizes the face. so this is a secure mode. Other features
+include vote counting and final result. The voter can log in the candidate can register
+through this system and the total number of votes each candidate got can also be
+calculated.
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 6
+Now there is no such facility as giving passwords or IDs or face verification to the
+voter. What we have now are only vote counting and the final result. The identity of
+the voter is done manually now. It this new system develops, everything will be
+automated, that is register the user, identify the user and whom all voted all these
+details will be automated.
+Main Objectives
+§Used to automate the manual system. Entire manual operations are converted into the
+computer by the project.
+§The user just needs to give the necessary details and the entire operations are
+performed by the system.
+§The chances of errors are reduced in the project.
+§The time required for updating different records is reduced by the project.
+§The project is designed to improve the manual system used for voting. All the
+operations are converted to different blocks of the project.
+.
+4.3PURPOSE AND SCOPE OF THE PROJECT
+The aim is to develop an application that seeks to use various stages of security
+authentication to enhance the election process for political party elections using the
+reacase study, i.e. The University of Ibadan, in the end imparting an internet platform
+which permits all eligible electorate to workout their franchise from any region for the
+duration of the election period.
+The targets are:
+1. To create a secured online voting platform where authentic city of votes and voters
+are ensured with the use of mechanisms such as facial recognition and one password
+time
+2. To enhance Voter's identity due to the fact that because biometric functions can not
+be shared.
+3. To ease the trouble of queuing in the course of balloting duration in elections.
+4.3.1 SCOPE OF THE PROJECT
+Voting in India is a Constitutional right if one is a citizen over 18 years of age. The
+basic idea of this system is to create an Online Voting System that will help to suppress
+deception of the manual voting system and also the prior versions of online voting by
+the camera for Face Recognition and using election id and password. An online voting
+system helps to securely and accurately tabulate the results.
+In the near future we can even implement the system on mobile phones. The new
+version can be implemented by developing an android application for voting. The
+password used by the user to vote is provided by the administrator. In the future, the
+user can be given the privilege of changing the password. So it helps to increase the
+security of the system.
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 7
+4.4 OBJECTIVE OF THE PROJECT
+Voting in India is a Constitutional right if one is a citizen over 18 years of age. The
+basic idea of this system is to create an Online Voting System that will help to suppress
+deception of the manual voting system and also the prior versions of online voting by
+the camera for Face Recognition and using election id and password. An online voting
+system helps to securely and accurately tabulate the results.T he project development
+to assist the users in minimizing the time and manpower required to manage the data
+in an organization, this project is a modular template system with the unique distinction
+of having a simple, user-friendly environment. This means users do not need any
+programming knowledge. A set of templates will be defined in the software to create
+an initial view, she/he can then use the simple management interface to control the
+software and perform their activities.
+4.5 FEASIBILITY STUDY
+Over the last year, there has been strong interest in E-voting as a way to make voting
+more convenient and, it is expected, to increase participation in the election process.
+E-voting systems are among those being considered to replace the traditional voting
+system. E-voting may become the quickest, cheapest, and most fficient way to
+administer elections d c nt votes since it nly consists of si le process or
+procedure and requires a few workers within the process.
+The main task of this contribution was to introduce the idea of the I-Voting systems.
+Security plays a major role in the development of any E-voting system. Availability,
+integrity, confidentiality, non - repudiation, and authe ication are key areas In
+computer security; by amalgamating these areas of security, together the form a
+cohesive bond that helps guarantee vvoter trust in the E-voting system. However, many
+threats exist, that may hinder the E-voting system to function correctly such as DoS
+attacks, worms, viruses, and Trojan horses to name a few.
+ It is imperative to correct all weaknesses of E-voting systems to ensure full
+voter trust compared to that traditional voting. A desirable voting system should be
+accessible to all potential voters. In some societies like in developing countries, not all
+voters have access to a computer and the internet. A good number of them do not know
+about computer usage and the internet. In such cases, the internet can be used as an
+option to improve voter turnout.
+Feasibility is the determination of whether a project is worth doing. The process of
+making this determination is called a feasibility study. This type of study determines
+if a project can o should be taken. Once it has been determined that a project is feasible,
+the analyst can go ahead and prepare the project specification which finalizes the
+project requirement. In this project, interviews and discussions are conducted with the
+staff and employees to analyze the problem. The feasibility study is the high-level
+capsule version of the staff and the entire system analysis and design process. The
+feasibility study can be classified into the following categories
+• Technical feasibility
+• Operational feasibility
+• Economic feasibility
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 8
+4.5.1 OPERATIONAL FEASIBILITY
+Operational Analysis is the process of comparing the actual project execution against
+the Performance Measurement Baseline. The analysis provides the project team with
+an understanding of the project and its progress. Performance analysis is a measure of
+the success or failure of a project using various parameters. It helps in developing a
+positive culture of project management that yields excellent results.
+in implementing this system. Even if the users of the organization know about
+computers, the mer friendliness provides them convenience and case. Termination of
+any infringement, violation, or ability that could result from the development of the
+system Operational feasibility also involves the determination of the security and
+validation. The working of the staff is reduced and made easier by the project. Not
+only that if the staff are given per training, but then it could also reduce unnecessary
+incorporation of staff to perform comparative studies.
+Thus, the project will be suited to overcome organizational restrictions. Thus
+considering the operational feasibility the development of the proposed system is
+considered operationally feasible for the development. To ensure success, desired
+operational outcomes must be imparted during design and development. These include
+such design-dependent parameters as reliability, maintainability, supportability,
+usability, producibility, disposability, sustainability, affordability and others. These
+parameters are required to be considered at the early stages of design if desired
+operational behaviours are to be realised. A system design and development requires
+appropriate and timely application of engineering and management efforts to meet the
+previously mentioned parameters. A system may serve its intended purpose most
+effectively when its technical and operating characteristics are engineered into the
+design. Therefore, operational feasibility is a critical aspect of systems engineering
+that needs to be an integral part of the early design phases
+ 4.5.2 TECHNICAL FEASIBILITY
+Technical feasibility centres around the existing system and to what extent it can
+support the proposed addition. It involves manual consideration to accaccommodate
+technicalhancements. If the budget is a serious constraint, then the project is judged
+not feasible. The development of the system in technology will have the following
+advantages.
+•The new system needs less storage space. • It can produce quick and up-to-date error-free reports.
+• It avoids data inconsistency.
+• It provides full security on confidential data.
+
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 9
+Technical Feasibility is performed to check whether the proposed system is
+technically feasible or not. This feasibility assessment is focused on gaining an
+understanding of the present technical resources of the organization and their
+applicability to the expected needs of the proposed system.
+It is an evaluation of the hardware and software and how it meets the needs of the
+proposed system. This evaluation determines whether the technology needed for the
+proposed system is available and how it can be integrated within the organization. The
+technical evaluation must also assess whether the existing systems can be upgraded to
+use the new technology and whether the organization has the expertise to use it
+4.5.3 ECONOMICAL ANALYSIS
+Economic analysis is the most frequently used technique for evaluating the
+effectiveness of a proposed system. More commonly known as cost/benefit analysis
+we determine the benefits and savings that are expected from a proposed system and
+compare them with costs. We found the benefits outweigh the costs; we decide to
+design and implement the new proposed system.
+Economic Feasibility valuates whether the system benefits greater than the cost.
+The proposed system is a cost-effective one since the benefit of the software
+outweighs the cost incurred in installing it. It can be developed under optimal expenses
+with the available hardware and software.
+The computerized system provides easy and faster information retrieval and saves a
+lot of time and manpower In Economic Feasibility cost-benefit analysis is done to
+evaluate the cost-effectiveness of the personal system. the proposed system is more
+economical than the existing system, since it uses GUI that reduces the operating time
+of the system and is interactive and user-friendly so the change of rror is and ost
+needed to modifies reduced. This deals with an evaluation of development cost
+weighed against the final income or benefit derived from the development of the
+proposed system
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 10
+5. SYSTEM ANALYSIS
+The analysis is a detailed study of various operations performed by a system and data
+are collected on the available files, decision points and transactions handled by the
+present system. In the system analysis phase, f,first we had to analyze the system
+thoroughly and understand the process and come to an outline of the new system. It is
+the first step in developing and managing systems. This is the proposed system and again
+we analyze the feasibility of a proposed system which is selecting the best combination
+of hardware costs.
+Once the project is initiated, the analyst begins to learn about the setting, the existing
+system and the physical process related to the revised system. Here the analyst should
+prepare an organization chart with a list of functions and the people who perform them.
+This will provide a better feel for the work environment.
+5.1 HARDWARE AND SOFTWARE SPECIFICATIONS
+ Hardware and software requirements for the installation and smooth functioning of
+this Project could be configured based on the requirement needed by the component of
+the Operating environment that works as a front-end system here we suggest minimum
+Configuration for both hardware and software components. Working off with this
+software is a requirement concrete on system environments. It includes two phases the
+development of this project deals with the following environment
+•Hardware Requirements
+•Software Requirements
+5.1.1 HARDWARE REQUIREMENTS
+The selection of Hardware is very important in the existence and proper working of any
+software. In the selection of hardware, there are many features that influence the success
+of a project. Here, we are providing the online houseboat tour booking system. The main
+feature of this application is that customers can choose houseboats, and check the deals,
+and different packages by maintaining their exclusivity. This project offers complete
+satisfactto for the customers.
+•Memory: 2GB
+• Processor: i5 processor
+• Input device: MOUSE, KEYBOARD,WEB CAMARA
+• Output device: MONITOR
+5.1.1 SOFTWARE REQUIREMENTS
+One of the most difficult tasks is the selection of the software once the system
+requirement is known is determining whether a particular software fits the requirements.
+After initial selection, further security is needed to determine the desirability of software
+with other candidates. This section first summarizes the application requirement
+question and then suggests more detailed comparisons.
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 11
+• Front-end: NetBeans
+• Back-end: MySQL Server
+• Operating System: Windows 10
+The operating system is the software responsible for allocating resources, including
+memory, processor, timer, disk space and peripheral devices such as printers and
+monitors. All application programs are using the operating system to gain access to these
+resources, as they are needed. Popular operating systems are WINDOWS, UNIX,
+LINUX etc.
+The operating system provides certain services to programs and users of these programs
+such as program execution, input-output operation, calculation, resource allocation etc.
+Convolution Neural Network Algorithms
+When it comes to Machine Learning, CNS perform really well. Artificial Neural
+Networks are used in various classification tasks like image, audio, words. Different
+types of Neural Networks are used for different purposes, for example for predicting
+the sequence of words we use Recurrent Neural Networks more precisely an LSTM,
+similarly for image classification we use Convolution Neural networks. In this blog
+we are going to build a basic building block for CNN.
+Before diving into the Convolution Neural Network, let us first revisit some concepts
+of Neural Network. In a regular Neural Network there are three types of layers:
+Input Layers: It’s the layer in which we give input to our model. The number of
+neurons in this layer is equal to the total number of features in our data (number of
+pixels in thecase of an image).
+Hidden Layer: The input from the Input layer is then feed into the hidden layer. There
+can be many hidden layers depending upon our model and data size. Each hidden layer
+can have different numbers of neurons which are generally greater than the number of
+features. The output from each layer is computed by matrix multiplication of output of
+the previous layer with learnable weights of that layer and then by the addition of
+learnable biases followed by activation function which makes the network nonlinear.
+Output Layer: The output from the hidden layer is then fed into a logistic function like
+sigmoid or softmax which converts the output of each class into the probability score
+of each class.
+The data is then fed into the model and output from each layer is obtained this step is
+called feedforward, we then calculate the error using an error function, some common
+error functions are cross-entropy, square loss error, etc. After that, we backpropagate
+into the model by calculating the derivatives.
+This step is called Backpropagation which basically is used to minimize the loss.
+Here’s the basic python code for a neural network with random inputs and two hidden
+layers.
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 12
+ALGORITHM
+activation = lambda x: 1.0/(1.0 + np.exp(-x)) # sigmoid function
+input = np.random.randn(3, 1)
+hidden_1 = activation(np.dot(W1, input) + b1)
+hidden_2 = activation(np.dot(W2, hidden_1) + b2)
+output = np.dot(W3, hidden_2) + b3
+5.2 DATA FLOW DIAGRAM (DFD)
+ A data flow diagram (DFD) is a graphical representation of the "flow" of data through
+an information system, modelling its process aspects. A DFD is often used as a
+preliminary step to create an overview of the system without going into detail, which
+can later be elaborated. DFDs can also be used for the visualization of data processing
+(structured design).A DF D shows what kind of information will be input to and output
+from the system, how the data will advance through the system, and where the data will
+be stored It does not show information about the timing of prothe cess or information
+about whether processes will operate in sequence or in paralle,l unlike a flowchart which
+also shows this information. Data flow diagrams are also known as bubble charts, DFD
+is a designing tool used in the top-down approach to System Design. This context-level
+DFD is next "exploded". to produce a level 1 DFD that shows some of the detail of the
+system being modelled. The level 1 DFD shows how the system is divided into
+subsystems (processes), each of which deals with one or more of the data flows to or
+from an external agent, and which together provide all of the functionality of the system
+as a whole. It also identifies internal data stores that must be present for the system to
+do its job and shows the flow of data between the various parts of the system.
+Data flow diagrams are one of the three essential perspectives of the structured Systems
+analysis and design method SSADM. The sponsor of a project and the end users will
+need to be briefed and consulted throughout all stages of a system's evolution. With a
+data flow diagram, users can visualize how the system will operate, what the system
+will accomplish, and how the system will be implemented
+DFD Notations
+• Process:
+They produce one or more data outputs. Processes are represented by round rectangles
+in Data Flow Diagram. Each process has a unique name and number. This name and
+number appear inside the rectangle that represents the process in Data Flow Diagram.
+Process name should be unambiguous and should convey as much meaning as possible
+without being too long
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 13
+•Data store:
+A data store is a repository for data that are temporarily or permanently recorded within
+the system. It is an "inventory" of data. These are the common link between data and
+process models. Only processes may connect with data stores. There can be two or more
+systems that have a data store. This can occur in the case of one system updating the
+data store, while the other system only accesses the data. Processes can enter data into
+a data store or retrieve data from the data store. Each data has a unique name.
+• Data Flows:
+Data flows show the passage of data in the system and are represented by the lines
+joining system components. An arrow indicates the direction of flow and the line is
+labelled by name of the data flow.
+• External Entities:
+External entities are outside the system but they either supply data into the system or
+use other system outputs. They are entitiesovern which the designer has control. They
+may be an organization's customer or other bodies with which the system interacts.
+External entities that simply data into the systems are sometimes called sources.
+External entities that are system data are sometimes called sinks. These are represented
+by rectangles in the DFD.
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 14
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 15
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 16
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 17
+5.4 USE CASE DIAGRAM
+A UML use case diagram is the primary form of system/software requirements for a
+new software program underdeveloped. Use cases specify the expbehaviourhavior
+(what), and not the exact method of making it happen (how). Use cases once specified
+can be das enoted both textual and visual representation (ie, use case diagram). A key
+concept of use case modeling is that it helps us design a system from the end user's
+perspective. It is an effective technique for communicating system behavior in the user's
+terms by specifying all externally visible system behavior. A use case diagram is usually
+simple. It does not show the detail of the use cases. It only summarizes some of the
+relationships between use cases, actors, and systems and it does not show the order in
+which steps are performed to achieve the goals of each use case.
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 18
+MAR GREGORIOS COLLEGE
+5.5ACTIVITY DIAGRAM
+An activity diagram is a flowchart to represent the flow from one activity to another
+activity. The activity can be described as an operation of the system. The control flow
+is drawn from one operation to another. This flow can be sequential branched, or
+concurrent Activity diagrams deal with all types of flow control by using different
+elements such as fork, join, etc. The basic purpose of activity diagrams is like the other
+four diagrams. It captures the dynamic behaviour of the system.
+Initial Node A black circle is the standard notation for an
+initial state before an activity takes place. It can
+either stand alone or you can use a note to
+further elucidate the starting point.
+Activity The activity symbols are the basic building
+blocks of an activity diagram and usually have
+a short description of the activity they
+represent.
+Control Flow Arrows represent the direction flow of the flow
+chart. The arrow points in the direction of
+progressing activities.
+Branch A marker shaped like a diamond is the
+standard symbol for a decision. There are
+always at least two paths coming out of a
+decision and the condition texts let you know
+which options are mutually exclusive.
+Fork A fork’s splits one activity flow into two
+concurrent activities.
+Join A join combines two concurrent activities back
+into a flow where only one activity is
+happening at a time.
+The f The final flow marker shows the ending point
+for a process in a flow.The difference between a
+final flow node and the end state node is that the
+latter represents the end of all flows in an
+activity.
+Complete Activity Flow The black circle that looks like a selected radio
+button is the UML symbol
+for the end state of an activity.As shown in two
+examples above,notes can also be used to
+explain an end state.
+Notes The shape used for notes.
+ONLINE VOTING SYSTEM 19
+ADMIN
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 20
+VOTER
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 21
+6. SYSTEM DESIGN
+ CODE
+•	adminlogin.java package voting.management;
+import java.awt.Toolkit;
+import java.awt.event.WindowEvent; import java.io.BufferedReader;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection; import java.net.MalformedURLException;
+import java.net.ProtocolException;
+import java.net.URL;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.sql.*;
+import javax.swing.*;
+public class adminlogin extends javax.swing.JFrame { public adminlogin() {
+initComponents();
+}
+/**
+* This method is called from within the constructor to initialize the form.
+* WARNING: Do NOT modify this code. The content of this method is always *
+regenerated by the Form Editor.
+*/
+@SuppressWarnings("unchecked")
+// <editor-fold defaultstate="collapsed" desc="Generated Code"> private void
+initComponents() {
+jPanel3 = new javax.swing.JPanel();
+jLabel8 = new javax.swing.JLabel();
+jLabel11 = new javax.swing.JLabel();
+jButton2 = new javax.swing.JButton();
+jPanel4 = new javax.swing.JPanel();
+jLabel9 = new javax.swing.JLabel();
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 22
+jLabel2 = new javax.swing.JLabel();
+jusername = new javax.swing.JTextField(); jLabel3 = new javax.swing.JLabel();
+jpassword = new javax.swing.JPasswordField(); jlogin = new javax.swing.JButton();
+jreset = new javax.swing.JButton();
+jLabel6 = new javax.swing.JLabel();
+jvoterid = new javax.swing.JTextField();
+jLabel7 = new javax.swing.JLabel();
+jvoterpassword = new javax.swing.JPasswordField(); jvlogin = new
+javax.swing.JButton();
+jvreset = new javax.swing.JButton(); jLabel1 = new javax.swing.JLabel(); jLabel4 =
+new javax.swing.JLabel(); jLabel10 = new javax.swing.JLabel(); jPanel1 = new
+javax.swing.JPanel(); jButton1 = new javax.swing.JButton();
+setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLO
+SE); setBackground(new java.awt.Color(255, 255, 255));
+setUndecorated(true);
+getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+jPanel3.setBackground(new java.awt.Color(0, 0, 255)); jPanel3.setLayout(new
+org.netbeans.lib.awtextra.AbsoluteLayout());
+jLabel8.setIcon(new
+javax.swing.ImageIcon(getClass().getResource("/voting/management/ic_person_white
+_48dp. png"))); // NOI18N
+jLabel8.setText("jLabel8");
+jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 187,
+221));
+jLabel11.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
+jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+jLabel11.setText("Voting Management System ");
+jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280,
+265, -1));
+jButton2.setIcon(new
+javax.swing.ImageIcon(getClass().getResource("/voting/management/help.png"))); //
+NOI18N
+jButton2.setBorder(null);
+jButton2.setBorderPainted(false);
+jButton2.setContentAreaFilled(false);
+jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 40,
+40));
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 23
+getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0,
+0, 300, 470));
+jPanel4.setBackground(new java.awt.Color(255, 255, 255)); jPanel4.setLayout(new
+org.netbeans.lib.awtextra.AbsoluteLayout());
+jLabel9.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+jLabel9.setForeground(new java.awt.Color(153, 153, 153));
+jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+jLabel9.setText("Voter Login");
+jPanel4.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 250, -1, -
+1));
+jLabel2.setText("User Name");
+jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, -1,
+10));
+jusername.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102,
+255, 102), 1, true));
+jusername.addActionListener(new java.awt.event.ActionListener() {
+public void actionPerformed(java.awt.event.ActionEvent evt) {
+jusernameActionPerformed(evt);
+} });
+jPanel4.add(jusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100,
+208, 30));
+jLabel3.setText("Password");
+jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, 68, -
+1));
+jpassword.setBorder(javax.swing.BorderFactory.createLineBorder(new
+java.awt.Color(102, 255, 51)));
+jpassword.addActionListener(new java.awt.event.ActionListener() {
+public void actionPerformed(java.awt.event.ActionEvent evt) {
+jpasswordActionPerformed(evt);
+} });
+jPanel4.add(jpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160,
+208, 30));
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 24
+jlogin.setBackground(new java.awt.Color(255, 245, 124)); jlogin.setFont(new
+java.awt.Font("Calibri", 0, 18)); // NOI18N jlogin.setForeground(new
+java.awt.Color(0, 0, 204)); jlogin.setText("Login");
+jlogin.setActionCommand("");
+jlogin.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0,
+0, 0))); jlogin.setBorderPainted(false);
+jlogin.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+jlogin.addActionListener(new java.awt.event.ActionListener() {
+public void actionPerformed(java.awt.event.ActionEvent evt) {
+jloginActionPerformed(evt);
+} });
+jPanel4.add(jlogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 84,
+30));
+jreset.setBackground(new java.awt.Color(255, 245, 124)); jreset.setFont(new
+java.awt.Font("Calibri", 0, 18)); // NOI18N jreset.setForeground(new
+java.awt.Color(0, 0, 204)); jreset.setText("Reset");
+jreset.setActionCommand("");
+jreset.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0,
+0, 0))); jreset.setBorderPainted(false);
+jreset.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+jreset.addActionListener(new java.awt.event.ActionListener() {
+public void actionPerformed(java.awt.event.ActionEvent evt) {
+jresetActionPerformed(evt);
+} });
+jPanel4.add(jreset, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 210, 80,
+30)); jLabel6.setText("Voter Id");
+jPanel4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 281, 623,
+-1));
+jvoterid.setBorder(javax.swing.BorderFactory.createLineBorder(new
+java.awt.Color(102, 255, 51)));
+jPanel4.add(jvoterid, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, 209,
+30));
+jLabel7.setText("Password");
+jPanel4.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 339, -1, -
+1));
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 25
+jvoterpassword.setBorder(javax.swing.BorderFactory.createLineBorder(new
+java.awt.Color(102, 255, 51)));
+jvoterpassword.addActionListener(new java.awt.event.ActionListener() {
+public void actionPerformed(java.awt.event.ActionEvent evt) {
+jvoterpasswordActionPerformed(evt);
+} });
+jPanel4.add(jvoterpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(40,
+360, 209, 30));
+jvlogin.setBackground(new java.awt.Color(255, 245, 124)); jvlogin.setFont(new
+java.awt.Font("Calibri", 0, 18)); // NOI18N jvlogin.setForeground(new
+java.awt.Color(0, 0, 204)); jvlogin.setText("Login");
+jvlogin.setActionCommand("");
+jvlogin.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0,
+0, 0))); jvlogin.setBorderPainted(false);
+jvlogin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+jvlogin.addActionListener(new java.awt.event.ActionListener() {
+public void actionPerformed(java.awt.event.ActionEvent evt) {
+jvloginActionPerformed(evt);
+} });
+jPanel4.add(jvlogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 410, 80,
+30));
+jvreset.setBackground(new java.awt.Color(255, 245, 124)); jvreset.setFont(new
+java.awt.Font("Calibri", 0, 18)); // NOI18N jvreset.setForeground(new
+java.awt.Color(0, 0, 204)); jvreset.setText("Reset");
+jvreset.setActionCommand("");
+jvreset.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0,
+0, 0))); jvreset.setBorderPainted(false);
+jvreset.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+jPanel4.add(jvreset, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 410, 80,
+30));
+jLabel1.setText("jLabel1");
+jPanel4.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 5, 42,
+19));
+jLabel4.setText("jLabel4");
+jPanel4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(423, 0, -1,
+28));
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 26
+jLabel10.setFont(new java.awt.Font("Calibri", 0, 24)); // NOI18N
+jLabel10.setForeground(new java.awt.Color(153, 153, 153));
+jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+jLabel10.setText("Admin login");
+jPanel4.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, -1, -
+1));
+jPanel1.setBackground(new java.awt.Color(255, 0, 51)); jPanel1.setLayout(new
+org.netbeans.lib.awtextra.AbsoluteLayout());
+jButton1.setBackground(new java.awt.Color(255, 51, 51));
+jButton1.setForeground(new java.awt.Color(255, 255, 255));
+jButton1.setIcon(new
+javax.swing.ImageIcon(getClass().getResource("/voting/management/clear.png"))); //
+NOI18N
+jButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new
+java.awt.Color(255, 255, 255)));
+jButton1.setContentAreaFilled(false);
+jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+jButton1.addActionListener(new java.awt.event.ActionListener() {
+public void actionPerformed(java.awt.event.ActionEvent evt) {
+jButton1ActionPerformed(evt);
+} });
+jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 40,
+40)); jPanel4.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0,
+40, 40));
+getContentPane().add(jPanel4, new
+org.netbeans.lib.awtextra.AbsoluteConstraints(290, 0, 300, 470));
+pack();
+}// </editor-fold>
+private void jusernameActionPerformed(java.awt.event.ActionEvent evt) { // TODO
+add your handling code here:
+}
+private void jloginActionPerformed(java.awt.event.ActionEvent evt) { try {
+Class.forName("com.mysql.cj.jdbc.Driver");
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 27
+Connection con =
+DriverManager.getConnection("jdbc:mysql://localhost:3306/voting_management_syst
+em","r oot","");
+String sql="select * from admin where name=? and password=?"; PreparedStatement
+ps=con.prepareStatement(sql);
+ps.setString(1, jusername.getText());
+ps.setString(2, String.valueOf(jpassword.getPassword())); ResultSet result =
+ps.executeQuery();
+if(result.next()){
+JOptionPane.showMessageDialog(null, "Username and Password correct");
+Home v=new Home(); v.setVisible(true);
+dispose();
+} else{
+JOptionPane.showMessageDialog(null, "invalid username or password");
+}
+} catch (SQLException ex) {
+Logger.getLogger(adminlogin.class.getName()).log(Level.SEVERE, null, ex);
+} catch (ClassNotFoundException ex) {
+Logger.getLogger(adminlogin.class.getName()).log(Level.SEVERE, null, ex);
+} }
+private void jresetActionPerformed(java.awt.event.ActionEvent evt) {
+jusername.setText(null);
+jpassword.setText(null);
+}
+private void jvoterpasswordActionPerformed(java.awt.event.ActionEvent evt) { //
+TODO add your handling code here:
+}
+private void jpasswordActionPerformed(java.awt.event.ActionEvent evt) { // TODO
+add your handling code here:
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 28
+}
+private void jvloginActionPerformed(java.awt.event.ActionEvent evt) {
+HttpURLConnection conn = null; DataOutputStream os = null;
+try{
+URL url = new URL("http://127.0.0.1:5000/pred/"); //important to add the trailing
+slash after add
+conn = (HttpURLConnection) url.openConnection();
+conn.setDoOutput(true);
+conn.setRequestMethod("POST");
+conn.setRequestProperty("Content-Type", "application/json");
+conn.setRequestProperty( "charset", "utf-8"); conn.setRequestProperty("Content￾Length", Integer.toString("hello".length()));
+BufferedReader br = new BufferedReader(new InputStreamReader(
+(conn.getInputStream())));
+String output;
+while ((output = br.readLine()) != null) {
+System.out.println(output); }
+conn.disconnect();
+try {
+Connection con =
+DriverManager.getConnection("jdbc:mysql://localhost:3306/voting_management_syst
+em","r oot",""); String sql2="select voterid,password from addvoter1 where voterid=?
+and password=?";
+PreparedStatement ps1=con.prepareStatement(sql2); ps1.setString(1,
+jvoterid.getText());
+ps1.setString(2, String.valueOf(jvoterpassword.getPassword()));
+ASAS KOCHI Department of Computer Science & IT
+ResultSet result = ps1.executeQuery(); if(result.next()){
+JOptionPane.showMessageDialog(null, "Username and Password correct");
+Startelection s=new Startelection(); s.setVisible(true);
+dispose();
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 29
+} else{
+JOptionPane.showMessageDialog(null, "invalid username or password"); }
+} catch (SQLException ex) {
+Logger.getLogger(adminlogin.class.getName()).log(Level.SEVERE, null, ex);
+}
+} catch (MalformedURLException e) {
+e.printStackTrace(); }catch (IOException e){ e.printStackTrace();
+}finally {
+if(conn != null)
+{
+conn.disconnect();
+} }
+}
+private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+System.exit(0); }
+public static void main(String args[]) {
+/* Set the Nimbus look and feel */
+//<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+/* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and
+feel.
+* For details see
+http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
+*/ try {
+for (javax.swing.UIManager.LookAndFeelInfo info :
+javax.swing.UIManager.getInstalledLookAndFeels()) {
+if ("Nimbus".equals(info.getName())) {
+javax.swing.UIManager.setLookAndFeel(info.getClassName()); break;
+} }
+} catch (ClassNotFoundException ex) {
+java.util.logging.Logger.getLogger(adminlogin.class.getName()).log(java.util.logging.
+Level.
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 30
+SEVERE, null, ex);
+} catch (InstantiationException ex) {
+java.util.logging.Logger.getLogger(adminlogin.class.getName()).log(java.util.logging.
+Level. SEVERE, null, ex);
+} catch (IllegalAccessException ex) {
+java.util.logging.Logger.getLogger(adminlogin.class.getName()).log(java.util.logging.
+Level. SEVERE, null, ex);
+} catch (javax.swing.UnsupportedLookAndFeelException ex) {
+java.util.logging.Logger.getLogger(adminlogin.class.getName()).log(java.util.logging.
+Level. SEVERE, null, ex);
+}
+//</editor-fold>
+/* Create and display the form */ java.awt.EventQueue.invokeLater(new Runnable() {
+public void run() {
+new adminlogin().setVisible(true);
+} });
+}
+// Variables declaration - do not modify
+private javax.swing.JButton jButton1;
+private javax.swing.JButton jButton2;
+private javax.swing.JLabel jLabel1;
+private javax.swing.JLabel jLabel10;
+private javax.swing.JLabel jLabel11;
+private javax.swing.JLabel jLabel2;
+private javax.swing.JLabel jLabel3;
+private javax.swing.JLabel jLabel4;
+private javax.swing.JLabel jLabel6;
+private javax.swing.JLabel jLabel7;
+private javax.swing.JLabel jLabel8;
+private javax.swing.JLabel jLabel9;
+private javax.swing.JPanel jPanel1;
+private javax.swing.JPanel jPanel3;
+private javax.swing.JPanel jPanel4;
+private javax.swing.JButton jlogin;
+private javax.swing.JPasswordField jpassword; private javax.swing.JButton jreset;
+private javax.swing.JTextField jusername;
+private javax.swing.JButton jvlogin;
+private javax.swing.JTextField jvoterid;
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 31
+private javax.swing.JPasswordField jvoterpassword; private javax.swing.JButton
+jvreset;
+// End of variables declaration }
+•	home.java
+package voting.management;
+import static java.awt.AWTEventMulticaster.add; import java.io.BufferedReader;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection; import java.net.MalformedURLException;
+import java.net.URL;
+import javax.swing.JOptionPane;
+public class Home extends javax.swing.JFrame {
+/**
+* Creates new form home */
+public Home() {
+initComponents(); }
+/**
+* This method is called from within the constructor to initialize the form.
+* WARNING: Do NOT modify this code. The content of this method is always *
+regenerated by the Form Editor.
+*/
+@SuppressWarnings("unchecked")
+// <editor-fold defaultstate="collapsed" desc="Generated Code">
+private void initComponents() {
+jMenuItem3 = new javax.swing.JMenuItem(); jMenuItem1 = new
+javax.swing.JMenuItem(); jMenuBar2 = new javax.swing.JMenuBar(); jMenu3 = new
+javax.swing.JMenu();
+jMenu4 = new javax.swing.JMenu(); jMenuBar3 = new javax.swing.JMenuBar();
+jMenu5 = new javax.swing.JMenu();
+jMenu6 = new javax.swing.JMenu();
+jLabel5 = new javax.swing.JLabel();
+jPanel4 = new javax.swing.JPanel();
+jaddvoter = new javax.swing.JButton(); jupdatevoter = new javax.swing.JButton();
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 32
+jdisplayvoter = new javax.swing.JButton(); jaddcondidate = new
+javax.swing.JButton(); jupdatecondidate = new javax.swing.JButton();
+jdiscondidatelist = new javax.swing.JButton(); jLabel11 = new javax.swing.JLabel();
+jPanel3 = new javax.swing.JPanel();
+jButton1 = new javax.swing.JButton();
+jPanel5 = new javax.swing.JPanel();
+jresult = new javax.swing.JButton(); train = new javax.swing.JButton(); jPanel2 = new
+javax.swing.JPanel(); jButton2 = new javax.swing.JButton(); jcounting1 = new
+javax.swing.JButton();
+jMenuItem3.setText("jMenuItem3"); jMenuItem1.setText("jMenuItem1");
+jMenu3.setText("File"); jMenuBar2.add(jMenu3);
+jMenu4.setText("Edit"); jMenuBar2.add(jMenu4);
+jMenu5.setText("jsjhdsajk"); jMenuBar3.add(jMenu5);
+jMenu6.setText("Edit"); jMenuBar3.add(jMenu6);
+jLabel5.setText("jLabel5");
+setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+setUndecorated(true);
+getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+jPanel4.setBackground(new java.awt.Color(0, 102, 153));
+jaddvoter.setBackground(new java.awt.Color(255, 255, 255)); jaddvoter.setFont(new
+java.awt.Font("Calibri", 0, 14)); // NOI18N jaddvoter.setForeground(new
+java.awt.Color(255, 255, 255)); jaddvoter.setText("Add Voter");
+jaddvoter.setAutoscrolls(true);
+jaddvoter.setBorder(null);
+jaddvoter.setBorderPainted(false); jaddvoter.setContentAreaFilled(false);
+jaddvoter.addActionListener(new java.awt.event.ActionListener() {
+public void actionPerformed(java.awt.event.ActionEvent evt) {
+jaddvoterActionPerformed(evt);
+} });
+jupdatevoter.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+jupdatevoter.setForeground(new java.awt.Color(255, 255, 255));
+jupdatevoter.setText("Update Voter"); jupdatevoter.setBorderPainted(false);
+jupdatevoter.setContentAreaFilled(false); jupdatevoter.addActionListener(new
+java.awt.event.ActionListener() {
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 33
+public void actionPerformed(java.awt.event.ActionEvent evt) {
+jupdatevoterActionPerformed(evt);
+} });
+jdisplayvoter.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+jdisplayvoter.setForeground(new java.awt.Color(255, 255, 255));
+jdisplayvoter.setText("Display Voter List"); jdisplayvoter.setBorderPainted(false);
+jdisplayvoter.setContentAreaFilled(false); jdisplayvoter.addActionListener(new
+java.awt.event.ActionListener() {
+public void actionPerformed(java.awt.event.ActionEvent evt) {
+jdisplayvoterActionPerformed(evt);
+} });
+jaddcondidate.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+jaddcondidate.setForeground(new java.awt.Color(255, 255, 255));
+jaddcondidate.setText("Add Candidate"); jaddcondidate.setBorder(null);
+jaddcondidate.setContentAreaFilled(false); jaddcondidate.addActionListener(new
+java.awt.event.ActionListener() {
+public void actionPerformed(java.awt.event.ActionEvent evt) {
+jaddcondidateActionPerformed(evt);
+} });
+jupdatecondidate.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+jupdatecondidate.setForeground(new java.awt.Color(255, 255, 255));
+jupdatecondidate.setText("Update Candidate"); jupdatecondidate.setBorder(null);
+jupdatecondidate.setContentAreaFilled(false);
+jupdatecondidate.addActionListener(new java.awt.event.ActionListener() {
+public void actionPerformed(java.awt.event.ActionEvent evt) {
+jupdatecondidateActionPerformed(evt);
+} });
+jdiscondidatelist.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+jdiscondidatelist.setForeground(new java.awt.Color(255, 255, 255));
+jdiscondidatelist.setText("Display Candidate List"); jdiscondidatelist.setBorder(null);
+jdiscondidatelist.setContentAreaFilled(false); jdiscondidatelist.addActionListener(new
+java.awt.event.ActionListener() {
+public void actionPerformed(java.awt.event.ActionEvent evt) {
+jdiscondidatelistActionPerformed(evt);
+} });
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 34
+jLabel11.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
+jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+jLabel11.setText("Welcome ");
+jPanel3.setBackground(new java.awt.Color(0, 0, 255));
+jButton1.setIcon(new
+javax.swing.ImageIcon(getClass().getResource("/voting/management/back.png"))); //
+NOI18N
+jButton1.setContentAreaFilled(false);
+jButton1.addActionListener(new java.awt.event.ActionListener() { public void
+actionPerformed(java.awt.event.ActionEvent evt) {
+jButton1ActionPerformed(evt); }
+});
+javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+jPanel3.setLayout(jPanel3Layout);
+jPanel3Layout.setHorizontalGroup(
+jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADIN G)
+.addGroup(javax.swing.GroupLayout.Alignment.TRAILING,
+jPanel3Layout.createSequentialGroup()
+.addGap(0, 0, Short.MAX_VALUE)
+.addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 45,
+javax.swing.GroupLayout.PREFERRED_SIZE))
+);
+jPanel3Layout.setV erticalGroup(
+jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADIN G)
+.addGroup(jPanel3Layout.createSequentialGroup()
+.addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 43,
+javax.swing.GroupLayout.PREFERRED_SIZE) .addGap(0, 0, Short.MAX_VALUE))
+);
+javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+jPanel4.setLayout(jPanel4Layout);
+jPanel4Layout.setHorizontalGroup(
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 35
+jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADIN G)
+.addGroup(jPanel4Layout.createSequentialGroup()
+.addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment
+.LEADING)
+.addGroup(jPanel4Layout.createSequentialGroup() .addGap(18, 18, 18)
+.addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment
+.LEADING)
+.addComponent(jaddcondidate, javax.swing.GroupLayout.PREFERRED_SIZE, 219,
+javax.swing.GroupLayout.PREFERRED_SIZE)
+.addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment
+.LEADING, false)
+.addComponent(jaddvoter, javax.swing.GroupLayout.DEFAULT_SIZE,
+javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+.addComponent(jdisplayvoter,
+javax.swing.GroupLayout.DEFAULT_SIZE,
+javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+.addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING,
+javax.swing.GroupLayout.DEFAULT_SIZE, 219, Short.MAX_VALUE))
+.addComponent(jupdatecondidate,
+javax.swing.GroupLayout.PREFERRED_SIZE, 219,
+javax.swing.GroupLayout.PREFERRED_SIZE)
+.addComponent(jdiscondidatelist, javax.swing.GroupLayout.PREFERRED_SIZE,
+219, javax.swing.GroupLayout.PREFERRED_SIZE)
+.addComponent(jupdatevoter, javax.swing.GroupLayout.PREFERRED_SIZE, 219,
+javax.swing.GroupLayout.PREFERRED_SIZE)))
+.addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE,
+javax.swing.GroupLayout.DEFAULT_SIZE,
+javax.swing.GroupLayout.PREFERRED_SIZE))
+.addContainerGap(23, Short.MAX_VALUE)) );
+jPanel4Layout.setV erticalGroup(
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 36
+jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADIN G)
+.addGroup(jPanel4Layout.createSequentialGroup() .addComponent(jPanel3,
+javax.swing.GroupLayout.PREFERRED_SIZE,
+javax.swing.GroupLayout.DEFAULT_SIZE,
+javax.swing.GroupLayout.PREFERRED_SIZE)
+.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+.addComponent(jLabel11)
+.addGap(76, 76, 76)
+.addComponent(jaddvoter, javax.swing.GroupLayout.PREFERRED_SIZE, 30,
+javax.swing.GroupLayout.PREFERRED_SIZE)
+.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+.addComponent(jupdatevoter)
+.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+.addComponent(jdisplayvoter)
+.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED,
+29, Short.MAX_VALUE) .addComponent(jaddcondidate,
+javax.swing.GroupLayout.PREFERRED_SIZE, 28,
+javax.swing.GroupLayout.PREFERRED_SIZE)
+.addGap(18, 18, 18)
+.addComponent(jupdatecondidate, javax.swing.GroupLayout.PREFERRED_SIZE, 25,
+javax.swing.GroupLayout.PREFERRED_SIZE)
+.addGap(18, 18, 18)
+.addComponent(jdiscondidatelist, javax.swing.GroupLayout.PREFERRED_SIZE, 28,
+javax.swing.GroupLayout.PREFERRED_SIZE)
+.addGap(44, 44, 44)) );
+getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0,
+0, 260, 460));
+jPanel5.setBackground(new java.awt.Color(255, 255, 255));
+jresult.setBackground(new java.awt.Color(255, 255, 255)); jresult.setText("For
+Result");
+jresult.setAutoscrolls(true);
+jresult.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new
+java.awt.Color(255, 0, 0)));
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 37
+jresult.setContentAreaFilled(false); jresult.addActionListener(new
+java.awt.event.ActionListener() {
+public void actionPerformed(java.awt.event.ActionEvent evt) {
+jresultActionPerformed(evt);
+} });
+train.setText("Train");
+train.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new
+java.awt.Color(255, 0, 0)));
+train.setContentAreaFilled(false);
+train.addActionListener(new java.awt.event.ActionListener() {
+public void actionPerformed(java.awt.event.ActionEvent evt) {
+trainActionPerformed(evt);
+} });
+jPanel2.setBackground(new java.awt.Color(255, 0, 51));
+jButton2.setIcon(new
+javax.swing.ImageIcon(getClass().getResource("/voting/management/clear.png"))); //
+NOI18N
+jButton2.setContentAreaFilled(false);
+jButton2.addActionListener(new java.awt.event.ActionListener() {
+public void actionPerformed(java.awt.event.ActionEvent evt) {
+jButton2ActionPerformed(evt);
+} });
+javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+jPanel2.setLayout(jPanel2Layout);
+jPanel2Layout.setHorizontalGroup(
+jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADIN G)
+.addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING,
+javax.swing.GroupLayout.PREFERRED_SIZE, 50, Short.MAX_VALUE)
+);
+jPanel2Layout.setV erticalGroup(
+jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADIN G)
+.addGroup(javax.swing.GroupLayout.Alignment.TRAILING,
+jPanel2Layout.createSequentialGroup()
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 38
+.addGap(0, 0, Short.MAX_VALUE)
+.addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 40,
+javax.swing.GroupLayout.PREFERRED_SIZE))
+);
+jcounting1.setText("For Counting");
+jcounting1.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new
+java.awt.Color(255, 0, 0)));
+jcounting1.setContentAreaFilled(false);
+jcounting1.addActionListener(new java.awt.event.ActionListener() {
+public void actionPerformed(java.awt.event.ActionEvent evt) {
+jcounting1ActionPerformed(evt);
+} });
+javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+jPanel5.setLayout(jPanel5Layout);
+jPanel5Layout.setHorizontalGroup(
+jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADIN G)
+.addGroup(javax.swing.GroupLayout.Alignment.TRAILING,
+jPanel5Layout.createSequentialGroup()
+.addContainerGap(65, Short.MAX_VALUE)
+.addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment
+.LEADING)
+.addGroup(jPanel5Layout.createSequentialGroup()
+.addGap(135, 135, 135)
+.addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE,
+javax.swing.GroupLayout.DEFAULT_SIZE,
+javax.swing.GroupLayout.PREFERRED_SIZE))
+.addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment
+.TRAILING, false)
+.addComponent(train, javax.swing.GroupLayout.DEFAULT_SIZE, 124,
+Short.MAX_VALUE)
+.addComponent(jresult, javax.swing.GroupLayout.DEFAULT_SIZE,
+javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 39
+.addComponent(jcounting1, javax.swing.GroupLayout.Alignment.LEADING,
+javax.swing.GroupLayout.DEFAULT_SIZE, 124, Short.MAX_VALUE)))) );
+jPanel5Layout.setV erticalGroup(
+jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADIN G)
+.addGroup(jPanel5Layout.createSequentialGroup() .addComponent(jPanel2,
+javax.swing.GroupLayout.PREFERRED_SIZE,
+javax.swing.GroupLayout.DEFAULT_SIZE,
+javax.swing.GroupLayout.PREFERRED_SIZE)
+.addGap(75, 75, 75)
+.addComponent(jcounting1, javax.swing.GroupLayout.PREFERRED_SIZE, 57,
+javax.swing.GroupLayout.PREFERRED_SIZE)
+.addGap(52, 52, 52)
+.addComponent(jresult, javax.swing.GroupLayout.PREFERRED_SIZE, 57,
+javax.swing.GroupLayout.PREFERRED_SIZE)
+.addGap(53, 53, 53)
+.addComponent(train, javax.swing.GroupLayout.PREFERRED_SIZE, 57,
+javax.swing.GroupLayout.PREFERRED_SIZE)
+.addContainerGap(69, Short.MAX_VALUE)) );
+getContentPane().add(jPanel5, new
+org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 250, 460));
+pack();
+}// </editor-fold>
+private void jaddvoterActionPerformed(java.awt.event.ActionEvent evt) { Addvoter
+add=new Addvoter();
+add.setVisible(true);
+dispose();
+}
+private void jupdatevoterActionPerformed(java.awt.event.ActionEvent evt) { update
+up=new update();
+up.setVisible(true);
+dispose();// TODO add your handling code here:
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 40
+}
+private void jdiscondidatelistActionPerformed(java.awt.event.ActionEvent evt) {
+displaycondidatelist d=new displaycondidatelist();
+d.setVisible(true);
+dispose();
+}
+private void jresultActionPerformed(java.awt.event.ActionEvent evt) { votingresult
+v=new votingresult();
+v.setVisible(true);
+dispose();
+}
+private void trainActionPerformed(java.awt.event.ActionEvent evt) {
+HttpURLConnection conn = null; DataOutputStream os = null; try{
+URL url = new URL("http://127.0.0.1:5000/train/"); //important to add the trailing
+slash after add
+conn = (HttpURLConnection) url.openConnection();
+conn.setDoOutput(true);
+conn.setRequestMethod("POST");
+conn.setRequestProperty("Content-Type", "application/json");
+conn.setRequestProperty( "charset", "utf-8"); conn.setRequestProperty("Content￾Length", Integer.toString("hello".length()));
+BufferedReader br = new BufferedReader(new InputStreamReader(
+(conn.getInputStream())));
+String output;
+while ((output = br.readLine()) != null) {
+System.out.println(output);
+}
+if (output=="success") {
+JOptionPane.showMessageDialog(null, "Data Training Completed"); }
+conn.disconnect();
+} catch (MalformedURLException e) { e.printStackTrace();
+}catch (IOException e){ e.printStackTrace();
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 41
+}finally {
+if(conn != null) {
+conn.disconnect(); }
+} }
+private void jdisplayvoterActionPerformed(java.awt.event.ActionEvent evt) {
+Dispalyvoterlist d=new Dispalyvoterlist();
+d.setVisible(true);
+dispose();
+}
+private void jaddcondidateActionPerformed(java.awt.event.ActionEvent evt) {
+addcondidate a=new addcondidate(); a.setVisible(true);
+dispose();
+}
+private void jupdatecondidateActionPerformed(java.awt.event.ActionEvent evt) {
+updatecandidate a=new updatecandidate();
+a.setVisible(true); dispose();
+}
+private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
+System.exit(0); }
+private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) { adminlogin
+a=new adminlogin();
+a.setVisible(true);
+dispose(); }
+private void jcounting1ActionPerformed(java.awt.event.ActionEvent evt) {
+Counting a=new Counting(); a.setVisible(true);
+dispose();
+// TODO add your handling code here: }
+/**
+* @param args the command line arguments */
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 42
+public static void main(String args[]) {
+/* Set the Nimbus look and feel */
+//<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+/* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and
+feel.
+* For details see
+http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
+*/ try {
+for (javax.swing.UIManager.LookAndFeelInfo info :
+javax.swing.UIManager.getInstalledLookAndFeels()) {
+if ("Nimbus".equals(info.getName())) {
+javax.swing.UIManager.setLookAndFeel(info.getClassName()); break;
+} }
+} catch (ClassNotFoundException ex) {
+java.util.logging.Logger.getLogger(Home.class.getName()).log(java.util.logging.Le
+vel.SEVERE, null, ex);
+} catch (InstantiationException ex) {
+java.util.logging.Logger.getLogger(Home.class.getName()).log(java.util.logging.Le
+vel.SEVERE, null, ex);
+} catch (IllegalAccessException ex) {
+java.util.logging.Logger.getLogger(Home.class.getName()).log(java.util.logging.Le
+vel.SEVERE, null, ex);
+} catch (javax.swing.UnsupportedLookAndFeelException ex) {
+java.util.logging.Logger.getLogger(Home.class.getName()).log(java.util.logging.Le
+vel.SEVERE, null, ex);
+}
+//</editor-fold>
+//</editor-fold>
+/* Create and display the form */ java.awt.EventQueue.invokeLater(new Runnable() {
+public void run() {
+new Home().setVisible(true);
+} });
+}
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 43
+// Variables declaration - do not modify private javax.swing.JButton jButton1; private
+javax.swing.JButton jButton2; private javax.swing.JLabel jLabel11;
+private javax.swing.JLabel jLabel5;
+private javax.swing.JMenu jMenu3;
+private javax.swing.JMenu jMenu4;
+private javax.swing.JMenu jMenu5;
+private javax.swing.JMenu jMenu6;
+private javax.swing.JMenuBar jMenuBar2; private javax.swing.JMenuBar
+jMenuBar3; private javax.swing.JMenuItem jMenuItem1; private
+javax.swing.JMenuItem jMenuItem3; private javax.swing.JPanel jPanel2;
+private javax.swing.JPanel jPanel3;
+private javax.swing.JPanel jPanel4;
+private javax.swing.JPanel jPanel5;
+private javax.swing.JButton jaddcondidate; private javax.swing.JButton jaddvoter;
+private javax.swing.JButton jcounting1; private javax.swing.JButton jdiscondidatelist;
+private javax.swing.JButton jdisplayvoter; private javax.swing.JButton jresult;
+private javax.swing.JButton jupdatecondidate; private javax.swing.JButton
+jupdatevoter; private javax.swing.JButton train;
+// End of variables declaration
+}
+•	Addvoter.java package voting.management;
+import java.io.BufferedReader;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import static java.lang.Integer.parseInt; import java.net.HttpURLConnection; import
+java.net.MalformedURLException; import java.net.URL;
+import java.sql.Connection;
+import java.sql.DriverManager; import java.sql.PreparedStatement; import
+java.sql.SQLException; import java.util.logging.Level; import
+java.util.logging.Logger; import javax.swing.JOptionPane; import java.sql.*;
+import org.python.core.PyObject;
+import org.python.util.PythonInterpreter;
+/** *
+* @author Niraj
+*/
+public class Addvoter extends javax.swing.JFrame {
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 44
+/**
+* Creates new form Addvoter */
+public Addvoter() { initComponents();
+}
+/**
+* This method is called from within the constructor to initialize the form.
+* WARNING: Do NOT modify this code. The content of this method is always *
+regenerated by the Form Editor.
+*/
+@SuppressWarnings("unchecked")
+// <editor-fold defaultstate="collapsed" desc="Generated Code"> private void
+initComponents() {
+jPanel1 = new javax.swing.JPanel();
+jvoterid = new javax.swing.JTextField(); jLabel1 = new javax.swing.JLabel();
+jLabel2 = new javax.swing.JLabel();
+jLabel3 = new javax.swing.JLabel();
+jname = new javax.swing.JTextField();
+jLabel4 = new javax.swing.JLabel(); jfathername = new javax.swing.JTextField();
+jLabel5 = new javax.swing.JLabel();
+jaddress = new javax.swing.JTextField(); jLabel6 = new javax.swing.JLabel();
+jsex = new javax.swing.JTextField();
+jLabel7 = new javax.swing.JLabel();
+jage = new javax.swing.JTextField();
+jpassword = new javax.swing.JPasswordField(); jPanel4 = new javax.swing.JPanel();
+jadd = new javax.swing.JButton();
+jclear = new javax.swing.JButton();
+jPanel2 = new javax.swing.JPanel();
+jLabel11 = new javax.swing.JLabel();
+jPanel3 = new javax.swing.JPanel();
+jButton1 = new javax.swing.JButton();
+jLabel8 = new javax.swing.JLabel();
+addface = new javax.swing.JButton();
+setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+setUndecorated(true);
+getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+jvoterid.setForeground(new java.awt.Color(255, 0, 0));
+jvoterid.setBorder(javax.swing.BorderFactory.createLineBorder(new
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 45
+java.awt.Color(102, 102, 102)));
+jvoterid.addMouseListener(new java.awt.event.MouseAdapter() {
+public void mouseClicked(java.awt.event.MouseEvent evt) {
+jvoteridMouseClicked(evt);
+} });
+jvoterid.addInputMethodListener(new java.awt.event.InputMethodListener() { public
+void caretPositionChanged(java.awt.event.InputMethodEvent evt) {
+}
+public void inputMethodTextChanged(java.awt.event.InputMethodEvent evt) {
+jvoteridInputMethodTextChanged(evt); }
+});
+jvoterid.addActionListener(new java.awt.event.ActionListener() {
+public void actionPerformed(java.awt.event.ActionEvent evt) {
+jvoteridActionPerformed(evt);
+} });
+jPanel1.add(jvoterid, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 180,
+30));
+jLabel1.setText("Voter Id");
+jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, -1, -
+1));
+jLabel2.setText("Password");
+jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, -1, -
+1));
+jLabel3.setText("Name");
+jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, -
+1));
+jname.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0,
+0, 0)));
+jPanel1.add(jname, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 180,
+30));
+jLabel4.setText("Father Name");
+jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, -1, -
+1));
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 46
+jfathername.setBorder(javax.swing.BorderFactory.createLineBorder(new
+java.awt.Color(0, 0, 0)));
+jPanel1.add(jfathername, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230,
+180, 30));
+jLabel5.setText("Address");
+jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, -1, -
+1));
+jaddress.setBorder(javax.swing.BorderFactory.createLineBorder(new
+java.awt.Color(0, 0, 0)));
+jPanel1.add(jaddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, 180,
+30));
+jLabel6.setText("Sex");
+jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 330, -1, -
+1));
+jsex.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0,
+0)));
+jsex.addActionListener(new java.awt.event.ActionListener() {
+public void actionPerformed(java.awt.event.ActionEvent evt) {
+jsexActionPerformed(evt);
+} });
+jPanel1.add(jsex, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, 180,
+30));
+jLabel7.setText("Age");
+jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, -1, -
+1));
+jage.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0,
+0)));
+jPanel1.add(jage, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 410, 180,
+30));
+jpassword.setBorder(javax.swing.BorderFactory.createLineBorder(new
+java.awt.Color(0, 0, 0)));
+jPanel1.add(jpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110,
+180, 30));
+jPanel4.setBackground(new java.awt.Color(255, 204, 0));
+jadd.setIcon(new
+javax.swing.ImageIcon(getClass().getResource("/voting/management/add.png"))); //
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 47
+NOI18N
+jadd.setBorder(null);
+jadd.setContentAreaFilled(false);
+jadd.addActionListener(new java.awt.event.ActionListener() {
+public void actionPerformed(java.awt.event.ActionEvent evt) {
+jaddActionPerformed(evt);
+} });
+jclear.setIcon(new
+javax.swing.ImageIcon(getClass().getResource("/voting/management/cached.png")) );
+// NOI18N
+jclear.setBorder(null);
+jclear.setContentAreaFilled(false);
+jclear.addActionListener(new java.awt.event.ActionListener() {
+public void actionPerformed(java.awt.event.ActionEvent evt) {
+jclearActionPerformed(evt);
+}
+});
+javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+jPanel4.setLayout(jPanel4Layout);
+jPanel4Layout.setHorizontalGroup(
+jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADIN G)
+.addGroup(jPanel4Layout.createSequentialGroup()
+.addContainerGap()
+.addComponent(jadd, javax.swing.GroupLayout.PREFERRED_SIZE, 80,
+javax.swing.GroupLayout.PREFERRED_SIZE)
+.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED,
+84, Short.MAX_VALUE)
+.addComponent(jclear, javax.swing.GroupLayout.PREFERRED_SIZE, 58,
+javax.swing.GroupLayout.PREFERRED_SIZE) .addGap(18, 18, 18))
+);
+jPanel4Layout.setV erticalGroup(
+jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADIN G)
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 48
+.addGroup(javax.swing.GroupLayout.Alignment.TRAILING,
+jPanel4Layout.createSequentialGroup()
+.addGap(0, 0, Short.MAX_VALUE)
+.addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment
+.LEADING)
+.addComponent(jclear, javax.swing.GroupLayout.PREFERRED_SIZE, 41,
+javax.swing.GroupLayout.PREFERRED_SIZE)
+.addComponent(jadd, javax.swing.GroupLayout.PREFERRED_SIZE, 0,
+Short.MAX_VALUE)))
+);
+jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 460, 250,
+40));
+getContentPane().add(jPanel1, new
+org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 250, 500));
+jPanel2.setBackground(new java.awt.Color(240, 158, 8));
+jLabel11.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
+jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+jLabel11.setText("Add Voter");
+jPanel3.setBackground(new java.awt.Color(240, 158, 8));
+jButton1.setBackground(new java.awt.Color(255, 255, 255));
+jButton1.setForeground(new java.awt.Color(255, 255, 255));
+jButton1.setIcon(new
+javax.swing.ImageIcon(getClass().getResource("/voting/management/back.png"))); //
+NOI18N
+jButton1.setBorder(null);
+jButton1.setContentAreaFilled(false); jButton1.addActionListener(new
+java.awt.event.ActionListener() {
+public void actionPerformed(java.awt.event.ActionEvent evt) {
+jButton1ActionPerformed(evt);
+} });
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 49
+javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+jPanel3.setLayout(jPanel3Layout);
+jPanel3Layout.setHorizontalGroup(
+jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADIN G)
+.addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE,
+javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+);
+jPanel3Layout.setV erticalGroup(
+jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADIN G)
+.addGroup(jPanel3Layout.createSequentialGroup()
+.addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 38,
+javax.swing.GroupLayout.PREFERRED_SIZE) .addGap(0, 53,
+Short.MAX_VALUE))
+);
+jLabel8.setIcon(new
+javax.swing.ImageIcon(getClass().getResource("/voting/management/ic_fingerprint
+_white_24dp.png"))); // NOI18N
+addface.setText("CAPTURE FACE"); addface.addActionListener(new
+java.awt.event.ActionListener() {
+public void actionPerformed(java.awt.event.ActionEvent evt) {
+addfaceActionPerformed(evt);
+} });
+javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+jPanel2.setLayout(jPanel2Layout);
+jPanel2Layout.setHorizontalGroup(
+jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADIN G)
+.addGroup(jPanel2Layout.createSequentialGroup() .addComponent(jPanel3,
+javax.swing.GroupLayout.PREFERRED_SIZE,
+javax.swing.GroupLayout.DEFAULT_SIZE,
+javax.swing.GroupLayout.PREFERRED_SIZE)
+.addGap(0, 0, Short.MAX_VALUE))
+.addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, 260,
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 50
+Short.MAX_VALUE) .addGroup(jPanel2Layout.createSequentialGroup()
+.addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment
+.LEADING)
+.addGroup(jPanel2Layout.createSequentialGroup()
+.addGap(83, 83, 83)
+.addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 116,
+javax.swing.GroupLayout.PREFERRED_SIZE))
+.addGroup(jPanel2Layout.createSequentialGroup() .addGap(84, 84, 84)
+.addComponent(addface)))
+.addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE,
+Short.MAX_VALUE))
+);
+jPanel2Layout.setV erticalGroup(
+jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADIN G)
+.addGroup(jPanel2Layout.createSequentialGroup()
+.addGap(0, 0, Short.MAX_VALUE)
+.addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE,
+javax.swing.GroupLayout.DEFAULT_SIZE,
+javax.swing.GroupLayout.PREFERRED_SIZE)
+.addGap(30, 30, 30)
+.addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 132,
+javax.swing.GroupLayout.PREFERRED_SIZE)
+.addGap(27, 27, 27) .addComponent(jLabel11) .addGap(33, 33, 33)
+.addComponent(addface) .addGap(137, 137, 137))
+);
+getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0,
+0, 260, 500));
+pack();
+}// </editor-fold>
+private void jaddActionPerformed(java.awt.event.ActionEvent evt) {
+try{ Connection con =
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 51
+DriverManager.getConnection("jdbc:mysql://localhost:3306/voting_management_syst
+em", "root","");
+String sql="insert into addvoter1 values(?,?,?,?,?,?,?)"; PreparedStatement
+ps=con.prepareStatement(sql); ps.setString(1, jvoterid.getText());
+ps.setString(2, jpassword.getText());
+ps.setString(3, jname.getText()); ps.setString(4, jfathername.getText()); ps.setString(5,
+jaddress.getText()); ps.setString(6, jsex.getText());
+String s=jage.getText();
+int i=Integer.parseInt(s); if(i>=18)
+{
+ps.setString(7, jage.getText());
+}
+else
+{
+JOptionPane.showMessageDialog(null, "age must greater than 18");} ps.execute();
+JOptionPane.showMessageDialog(null, "Data Inserted Sucessfully"); Home h=new
+Home();
+h.setVisible(true);
+dispose();
+}catch (SQLException ex) {
+Logger.getLogger(Addvoter.class.getName()).log(Level.SEVERE, null, ex);}
+}
+private void jclearActionPerformed(java.awt.event.ActionEvent evt) {
+jvoterid.setText(null);
+jpassword.setText(null);
+jname.setText(null);
+jfathername.setText(null); jaddress.setText(null); jage.setText(null);
+}
+private void jsexActionPerformed(java.awt.event.ActionEvent evt) { // TODO add
+your handling code here:
+}
+private void jvoteridInputMethodTextChanged(java.awt.event.InputMethodEvent evt)
+{
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 52
+}
+private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) { Home
+h=new Home();
+h.setVisible(true);
+dispose();
+}
+private void jvoteridMouseClicked(java.awt.event.MouseEvent evt) {
+}
+private void jvoteridActionPerformed(java.awt.event.ActionEvent evt) {
+// TODO add your handling code here: }
+private void addfaceActionPerformed(java.awt.event.ActionEvent evt) {
+String voterid=jvoterid.getText(); HttpURLConnection conn = null;
+DataOutputStream os = null; try{
+URL url = new URL("http://127.0.0.1:5000/api/"+voterid+""); //important to add the
+trailing slash after add
+conn = (HttpURLConnection) url.openConnection();
+conn.setDoOutput(true);
+conn.setRequestMethod("POST");
+conn.setRequestProperty("Content-Type", "application/json");
+conn.setRequestProperty( "charset", "utf-8"); conn.setRequestProperty("Content￾Length", Integer.toString("hello".length()));
+BufferedReader br = new BufferedReader(new InputStreamReader(
+(conn.getInputStream())));
+String output;
+while ((output = br.readLine()) != null) {
+System.out.println(output); }
+conn.disconnect();
+} catch (MalformedURLException e) { e.printStackTrace();
+}catch (IOException e){ e.printStackTrace();
+}finally {
+if(conn != null) {
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 53
+conn.disconnect(); }
+}
+// TODO add your handling code here: }
+/**
+* @param args the command line arguments */
+public static void main(String args[]) {
+/* Set the Nimbus look and feel */
+//<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+/* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and
+feel.
+* For details see
+http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
+*/ try {
+for (javax.swing.UIManager.LookAndFeelInfo info :
+javax.swing.UIManager.getInstalledLookAndFeels()) {
+if ("Nimbus".equals(info.getName())) {
+javax.swing.UIManager.setLookAndFeel(info.getClassName());
+break; }
+}
+} catch (ClassNotFoundException ex) {
+java.util.logging.Logger.getLogger(Addvoter.class.getName()).log(java.util.logging.
+Level.SEVERE, null, ex);
+} catch (InstantiationException ex) {
+java.util.logging.Logger.getLogger(Addvoter.class.getName()).log(java.util.logging.
+Level.SEVERE, null, ex);
+} catch (IllegalAccessException ex) {
+java.util.logging.Logger.getLogger(Addvoter.class.getName()).log(java.util.logging.
+Level.SEVERE, null, ex);
+} catch (javax.swing.UnsupportedLookAndFeelException ex) {
+java.util.logging.Logger.getLogger(Addvoter.class.getName()).log(java.util.logging.
+Level.SEVERE, null, ex);
+}
+//</editor-fold>
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 54
+/* Create and display the form */ java.awt.EventQueue.invokeLater(new Runnable() {
+public void run() {
+new Addvoter().setVisible(true);
+} });
+}
+// Variables declaration - do not modify
+private javax.swing.JButton addface;
+private javax.swing.JButton jButton1;
+private javax.swing.JLabel jLabel1;
+private javax.swing.JLabel jLabel11;
+private javax.swing.JLabel jLabel2;
+private javax.swing.JLabel jLabel3;
+private javax.swing.JLabel jLabel4;
+private javax.swing.JLabel jLabel5;
+private javax.swing.JLabel jLabel6;
+private javax.swing.JLabel jLabel7;
+private javax.swing.JLabel jLabel8;
+private javax.swing.JPanel jPanel1;
+private javax.swing.JPanel jPanel2;
+private javax.swing.JPanel jPanel3;
+private javax.swing.JPanel jPanel4;
+private javax.swing.JButton jadd;
+private javax.swing.JTextField jaddress; private javax.swing.JTextField jage;
+private javax.swing.JButton jclear;
+private javax.swing.JTextField jfathername; private javax.swing.JTextField jname;
+private javax.swing.JPasswordField jpassword; private javax.swing.JTextField jsex;
+private javax.swing.JTextField jvoterid;
+// End of variables declaration }
+•	Datasetmaker.py
+import cv2 import os import sys
+def collect(name): face_cascade=cv2.CascadeClassifier(cv2.data.haarcascades
++'haarcascade_frontalface_alt2.xml')
+if not os.path.exists('D:/Major_project/face_recognition/images'+name):
+os.makedirs('D:/Major_project/face_recognition/images'+name)
+if not os.path.exists('D:/Major_project/face_recognition/images2/'+name):
+os.makedirs('D:/face_recognition/face_recognition/images2/'+name+'/')
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 55
+i= 0
+# capture frames from a camera cap = cv2.VideoCapture(0)
+# loop runs if capturing has been initialized. while cap.isOpened():
+# reads frames from a camera ret, img = cap.read() print(img.size)
+# convert to gray scale of each frames
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) print(gray.size)
+# Detects faces of different sizes in the input image faces =
+face_cascade.detectMultiScale(gray, 1.1, 5)
+for (x,y,w,h) in faces:
+# To draw a rectangle in a face
+roi_gray = gray[y:y+h, x:x+w] roi_color = img[y:y+h, x:x+w]
+print("face",len(roi_color))
+cv2.imwrite('D:/Major_project/face_recognition/images/'+name+'/'+name+str(i)+'.jpg',
+roi_col or)
+cv2.imwrite('D:/Major_project/face_recognition/images2/'+name+'/'+name+str(i)+'.jpg
+',img) cv2.rectangle(img,(x,y),(x+w,y+h),(0,255,0),2)
+print(i)
+i += 1
+# Display an image in a window cv2.imshow('Face scanner',img)
+# Wait for q key to stop
+key = cv2.waitKey(1) & 0xFF if key == ord('q') or i == 100:
+break
+# Close the window print('dataset created') cap.release() cv2.destroyAllWindows()
+return "success"
+•	main.py
+from PIL import Image
+from flask import Flask, request import cv2
+from dataSetMaker import collect from train import do_train
+from recognize import predict app = Flask(__name__)
+@app.route('/api/<name>', methods=['POST']) def get_image(name):
+ret=collect(name)
+return ret
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 56
+@app.route('/train/', methods=['POST']) def get_train():
+do_train()
+return "success"
+@app.route('/pred/', methods=['POST']) def get_pred():
+name=predict()
+return name
+if __name__ == '__main__':
+app.debug = True # enables auto reload during development app.run()
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 57
+System Design involves translating system requirements and conceptual design
+into technical specifications and the general flow of processing. It is a high level strategy
+for solving the problem and building a solution. System Design includes decisions
+about the organization of the system into subsystems, the allocation of subsystems
+to hardware and software components and major conceptual and policy decision that
+forms the framework for detailed design.
+There are two levels of system design:
+Logical design
+• Physical design.
+In logical design, the designer produces a specification of the major features of the
+system which meet the objectives. The delivered products of logical design include
+current requirements of the following system components:
+• Input design.
+• Output design.
+• Database design.
+Physical Design takes this logical design blueprint and produces the program software,
+files and a working system. Design specifications instruct programmers about what
+the system should do. The programmers in turn write the programs that accept input
+from users, process data, process reports and store data in files. Data flow diagrams are
+the central tool and the basis from which other components are developed. The
+transformation of data from input to output, through the pro,cess may be described
+logically and independently of the physical components.
+6.1 INPUT DESIGN
+The automation is easy and free from errors. Input design is the art of overall system
+design that needs careful attention and includes specifying the means by which actions
+are taken.
+To produce a cost-effective method of input.
+To achieve the highest possible level of accuracy.
+To ensure that the input is acceptable and understood by the user.
+one is the current password, and another is a secondary password, which allows us to
+transition to the new password.
+INPUT STAGES:
+The main input stages can be listed below:
+•Data recording
+•Data transaction
+•Data conversion
+•Data verification
+•Data control
+•Data transmission
+•Data validation
+•Data correction
+ INPUT TYPES:
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 58
+It is necessary to determine the various types of inputs. Inputs can be categorized
+as follows:
+External inputs, are prime inputs for the system.
+Internal inputs, are user communications with the system.
+Operational, which are the computer department’s communication to the system.
+Interactive, which are inputs entered during a dialogue.
+6.2 OUTPUT DESIGN
+Output from the computer sysis are required primarily to communicate the results of
+processing to the user. They are also used to provide a permanent copy of the results
+for later consultations. The various types of outputs in general are:
+External Outputs, whose destination is outside the organisation. Internal Outputs, whose
+destination is within the organization.
+User’s main interface with the computer.
+Operational Outputs, whose use is pure within the computer department.
+Interface Outputs involves user communicating directly.
+OUTPUT DEFINITION:
+The Output should be defined in terms of the following points:
+Types of the output.
+• Content of the output.
+• Format of the output.
+• Formal of the output.
+• Location of the output.
+• Frequency of the output.
+• The volume of the output.
+• The sequence of the output.
+It is not always desirable to print or display data as it is held on a computer. It should
+be decided as to which form of the output is the most suitable.
+For example:
+Will decimal points need to be inserted?
+Should leading zeros suppressed.
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 59
+6.2DATABASE DESIGN
+A Database is a collection of interrelated data with minimum redundancy to serve many
+applications. In n database Environment, common data are available and used by several
+users. Instead of each user managingtheir ownn data, authorized user share data across
+applicationtion with database software managing the data as an entry.
+The database design phases, data are represented using a certain data model. The data
+model is a collection of concepts or notations for describing data, data relationships, and
+data semantics and data constraints. Most data models also include a set of basic
+operations for manipulating data in the database
+6.3.1 TABLE DESIGN
+Database files are the key sources of information in the system. Theseiles should be
+properly designed and planned for the collection, accumulation, and editing of the
+required information. The objectives of the file design are to provide effective auxiliary
+storage and to contribute to the overall efficiency of the computer program component
+of the system. In the concepts of database design, there are two types of data-physical
+data and logical data.
+Physical data is that which is written on those pieces of paper. Logical data are those,
+which are calculated based on some of the retrieved data in a certain sequence in
+summary form. In a computer-based data processing system, the separation of physical
+and logical data provides the same advantages: admin
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 60
+MAR GREGORIOS COLLEGE
+1.VOTER TABLE
+Description: To store the VOTER details
+PRIMARY KEY: voterid
+COLUMN NAME DATA TYPE CONSTRAINTS DESCRIPTION
+voterid Varchar (20) Primary Key Voter id number.
+password Varchar (20) Not Null Secret key for the voter.
+name Varchar (20) Not Null Name of the voter.
+fathername Varchar (20) Not Null Father’s Name
+address Varchar (20) Not Null Address of the voter.
+sex Varchar (20) Not Null Sex
+age Varchar (20) Not Null Age of the voter.
+2.Admin Table
+Description: To store the Password details
+ PRIMARY KEY: Name
+COLUMN NAME DATA TYPE CONSTRAINTS DESCRIPTION
+Name Varchar (30) PRIMARY KEY Name of the person.
+Password Varchar (30) Not Null Secret key for the admin.
+3.Partylist1 Table
+ Description: To store the party details
+ PRIMARY KEY: partysign
+COLUMN NAME DATA TYPE CONSTRAINTS DESCRIPTION
+name Varchar (25) Not Null Name of the Party.
+partyleader Varchar (25) Not Null Name of the Candidate.
+sex Varchar (10) Not Null Sex
+age Int Not Null Age of the Candidate.
+partyheadquater Varchar (25) Not Null Partyheadquater.
+partysign Varchar (20) PRIMARY KEY Partysign.
+ONLINE VOTING SYSTEM 61
+MAR GREGORIOS COLLEGE
+ 4 .Result5 Table
+Description: To store the result details
+ PRIMARY KEY: id
+COLUMN NAME DATA TYPE CONSTRAINTS DESCRIPTION
+id Int PRIMARY KEY Uniquely Identify key.
+partyname Varchar (20) Not Null Name of the party.
+count Varchar (20) Not Null Total number of votes.
+ONLINE VOTING SYSTEM 62
+6.3 USER INTERFACE
+• Login page
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 63
+• Admin page
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 64
+• Add Voter
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 65
+• Update voter
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 66
+• Display Voter List
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 67
+• Add Candidate
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 68
+ 7. TESTING
+SYSTEM DEVELOPMENT
+In the development of Online voting system demand is based on windows, sql and
+Sublime text softwares constructed from the specification proposed in the design
+phase.
+All necessary procedures manuals software specification and other documentation are
+compiled. The Software is designed in user friendly manner. So that even a beginner in
+computer can handle the system without much difficulty. In the development phase, all
+the design specification are implemented with minimum cost and necessary care has been
+take in order to hide the implementation details from uses
+ System development resolves around a life cycle that begins with recognition to
+user needs. Following a feasibility study, the key stages of the cycle are evaluation of the
+present system, information gathering, cost/benefit analysis, detailed design and
+implementation of the candidate system.
+The life cycle is not a procedure that deals with hardware and software. It is building
+computer based system to help the user to open at a business or make decision effectively
+and manage an enterprise successfully.
+The stages of system development are follows:
+• Initial investigation
+• Feasibility study
+• Analysis
+• Design
+• Implementation
+• Post implementation and maintenance
+7.1 UNIT TESTING
+Unit testing enables a programmer to detect error in coding. A unit test focuses
+verification of the smallest unit of software design. The testing was carried out during the
+coding itself. In the testing step, each module is to be work satisfactory at the excepted
+output from the module.
+Project aspect:
+ The front end design consist of various forms. They were tested for data acceptance.
+Similarity, the back end also tested for successful acceptance and retrieval of data.
+ 7.2 INTEGRATION TESTING
+ System testing integration testing is a systematic technique for constructing tests to
+uncover error associated with the interface. It comprises two or more developers or
+development team combining the program to determine how they work together.
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 69
+7.3 SYSTEM TESTING
+ System testing is actually a series of different testing whose primary purpose is to fully
+exercise the computer based system. Software testing is critical element of software
+quality assurance and represent the ultimate review of the specifications, design and
+coding. System testing makes a logical assumption that all the part of the system is
+correct, the goal will be successfully achieved. During testing the major activities are
+concerned on the examination and modification of the source code.
+ Testing is a process of executing a program with intend of finding an error. A good test
+is one that uncover an as yet undiscovered error.
+Testing objects are:
+• Unit testing
+• Integration testing
+• Validation testing
+• Output testing
+VALIDATION TESTING
+Evaluating software during the development process or at the end of the development
+process to determine whether it satisfies specified business requirements. Validation
+Testing ensures that the product actually meets the client's needs.
+OUTPUT TESTING
+This testing is not concerned about the source code of the application. Each
+functionality of the software application is tested by providing appropriate test input,
+expecting the output and comparing the actual output with the expected output
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 70
+8. ENHANCEMENT
+In nearfuture we can even implement the system in mobile phones. The new version can
+be implemented by developing an android application for voting. The password used by
+the user to vote is provided by the administrator. In the future the user can be given the
+privilege of changing the password. So, it helps to increase the security of the system
+Implementation is the project where the theoretical design is turned into a working
+system and is giving confidence on the new system for the uses that it will work
+efficiently and effectively .It involves careful planning, investigation of current system
+and its constraints on implementation, design of methods to achieve the changeover, an
+evaluation, of changeover methods. Apart from planning major task of preparing the
+implementation are education and training of users. The more complex system being
+implemented, the more involved will be the system analysis and the design effort
+required just for implementation, on implementation coordinating committee based on
+policies of individual organization has been appointed.The implementation process
+begins with preparing the plan for the implementation for the system. According to this
+plan, the activities are to be carried out, discussion made regarding the equipment and
+resources and the additional equipment as to be acquired to implement the new system.
+The implementation is the final important phase. The most critical stage in achieving
+successful new system and in giving the user confidence that the new system will work
+and be effective. The system can be implemented only after through testing is done and
+if it found to working according to the specification. This method also offers the greatest
+security. Since the old system can take over if the errors are found or inability to handle
+certain type of transaction while using new system
+IMPLEMENTATION PLAN
+Implementation includes all those activities that take place to convert from old system
+to new. At this stage the theoretical design is turned into a working system. The crucial
+stage in achieving a successful new system and giving confidence on the system for the
+users that will work efficiently and effectively. The implementation involves careful
+planning, of the current system and its constraints on implementation, design of methods
+to achieve the changeover require the continuing involvement of a large proportion of
+computer department resources. Most changes arise in two ways.
+Maintenance is continued till the product is reengineered or deployed to another
+platform. Maintenance is also done based on fixing the problem reported, changing the
+interface with other software or hardware, enhancing the software. Any system
+developed should be secured and protected against possible hazards. Security measures
+are provided to prevent unauthorized access of the database at various levels. An
+uninterrupted power supply should be provided so that power failure or voltage
+fluctuations will not erase the data in the file.
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 71
+9.CONCLUSION
+As we see that existing voting system has many defects such as lengthy process, time
+taking, not secure, bogus voting, no security level but now we can say that our approach
+is more useful and secure from the existing system.
+Since,we are using two level of security in this proposed system the false voters can be
+easily identified. The facial authentication technique is very much useful in identifying
+the fraud voters, so we can avoid the bogus votes during election commission. The
+voters can cast their voting from anywhere by login to our proposed smart voting system
+through internet. As every operation is performed through internet connectivity so, it is
+onetime investment for government. Voters’ location is not important but their voting
+is important. Smart voting system provides updated result at each and every minute.
+Also requires less manpower and resources.
+We proposed the process of an online system, which includes systems like enlistment
+of voters, vote casting, vote checking, and pronouncing results which would establish a
+decent answer to substitute for the framework that is in the institutes in Kenya. The aim
+is to develop an application that seeks to use various stages of security authentication to
+enhance the election process for political party elections using the real case study, i.e.
+the University of Ibadan, ultimately providing an online platform which enables all
+eligible voters to exercise their franchise from any location during the election period.
+As we see that existing voting system has many defects such as lengthy process, time
+taking, not secure, bogus voting, no security level but now we can say that our approach
+is more useful and secure from the existing system. Since, we are using two level of
+security in this proposed system the false voters can be easily identified. The facial
+authentication technique is very much useful in identifying the fraud voters, so we can
+avoid the bogus votes during election commission. The voters can cast their voting from
+anywhere by login to our proposed smart voting system through internet. As every
+operation is performed through internet connectivity so, it is onetime investment for
+government. Voters' location is not important but their voting is important. Smart voting
+system provides updated result at each and every minute. Also requires less man power
+and resources
+MAR GREGORIOS COLLEGE
+ONLINE VOTING SYSTEM 72
+10. REFERENCES
+• www.google.com
+• www.stackoverflow.com
+• www.edureka.com
+• www.developer.android.com
+• www.infoworld.com
+MAR GREGORIOS COLLEGE
